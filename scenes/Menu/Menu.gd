@@ -3,6 +3,8 @@ extends Node2D
 const INSTANCES_TEXT = "Cantidad de instancias: "
 # Variable para contar cantidad de instancias
 var instancesCount = 0
+@onready var red_generator: TextureButton = $RedGenerator
+@onready var violet_generator: TextureButton = $VioletGenerator
 
 func _ready():
 	# Inicializa el texto de "CountLabel" usando el texto
@@ -12,8 +14,8 @@ func _ready():
 
 
 func _on_violet_generator_button_down() -> void:
-	pass # Replace with function body.
+	violet_generator.generate_block()
 
 
 func _on_red_generator_button_down() -> void:
-	pass # Replace with function body.
+	red_generator.generate_block()
