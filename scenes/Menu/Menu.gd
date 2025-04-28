@@ -6,6 +6,7 @@ var instancesCount = 0
 @onready var red_generator: TextureButton = $RedGenerator
 @onready var violet_generator: TextureButton = $VioletGenerator
 
+
 func _ready():
 	# Inicializa el texto de "CountLabel" usando el texto
 	# Constante "INSTANCES_TEXT" más el valor de "instancesCount" como Texto
